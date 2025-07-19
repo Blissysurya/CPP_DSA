@@ -32,7 +32,7 @@ int main(){
 
     for(int i=0;i<n;i++){
         if(mp[pref[i]-k]){
-            cnt += mp[pref[i]-k] 
+            cnt += mp[pref[i]-k];
         }
         mp[pref[i]]++;
     }
