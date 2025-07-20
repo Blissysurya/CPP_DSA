@@ -24,7 +24,7 @@ int main(){
 
     map<int,int> mp;
 
-    mp[0]=0;
+    mp[0]=-1;
 
     vector<int> pref(n);
     pref[0]=vec[0];
@@ -42,12 +42,14 @@ int main(){
             ans = max(ans,i-mp[pref[i]-k]);
         }
 
-        int x=mp[pref[i]-k];
-        
+        int x=mp[pref[i]
+    ];
+
         if(mp.find(x)==mp.end()){
             mp[x]=i;
         }
     }
+    
 
     cout<<ans<<endl;
 
